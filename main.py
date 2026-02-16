@@ -13,6 +13,3 @@ def html(filename):
 @app.route("/images/<filename>")
 def images(filename):
     return send_file("images/"+filename)
-
-if __name__ == "__main__":
-    app.run()
